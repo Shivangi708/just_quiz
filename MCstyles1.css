@@ -1,0 +1,220 @@
+body{
+    background-image: url("bg2.jpg");
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+
+.quiz-wrapper{
+    height: 400px;
+    width: 600px;
+    background-color: white;
+    /* margin: 30px auto  ;  */
+    margin-top: 90px;
+    margin-left: 390px;
+    border-radius: 8px;
+    padding:25px 
+}
+
+.quiz-wrapper .question{
+    min-height: 50px;
+    background-color:#9d0f91;
+    border-radius: 8px;
+    color: white;
+    padding: 15px;
+    float: left;
+    width: 100%;
+    font-size: 25px;
+}
+
+.quiz-wrapper .options{
+    float: left;
+    width: 100%;
+}
+
+.quiz-wrapper .options ul{
+    list-style: none;
+    padding: 0%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.quiz-wrapper .options ul li{
+    display: inline-block;
+    background-color: #b088f9;
+    width: 46%;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    margin: 10px;
+    color:white;
+    box-shadow: 0px 3px 0px grey;
+    cursor: pointer;
+}
+
+.quiz-wrapper .options ul li.correct{
+    background-color: green;
+    box-shadow: 0px 3px 0px grey;
+}
+
+.quiz-wrapper .options ul li.wrong{
+    background-color: red;
+    box-shadow: 0px 3px 0px grey;
+}
+
+.quiz-wrapper .options ul li:active{
+    box-shadow: 0px 0px 0px  rgb(84, 110, 179);
+}
+
+
+
+.quiz-wrapper .score {
+    float: left;
+    width: 100%;
+}
+
+.quiz-wrapper .score .next{
+    width: 40%;
+    float: left;
+}
+
+.quiz-wrapper .score .next button{
+    padding: 10px 70px;
+    color: white;
+    background-color:#6a2c70;
+    border: none;
+    border-radius: 8px;
+    margin-left: 5%;
+}
+#btnQuit{
+    padding: 10px 70px;
+    color: white;
+    background-color:#6a2c70;
+    border: none;
+    border-radius: 8px; 
+    margin-top: 3%; 
+    margin-left: 5%;
+}
+.quiz-wrapper .score .score-card{
+    width: 60%;
+    float: left;
+    line-height: 40px;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.quiz-wrapper .score .score-card span{
+    background-color: rgb(12, 88, 29);
+    padding: 5px 20px;
+    border: none;
+    color:white;
+    border-radius: 8px;
+}
+@media (max-width: 960px){
+    .quiz-wrapper{
+        height: 600px;
+        width:400px;
+        margin-left: 65px;
+    }
+
+}
+@media (max-width: 530px){
+    .quiz-wrapper{
+        height: 800px;
+        width:260px;
+    }
+    .quiz-wrapper .score .score-card{
+        text-align: center;
+        margin-top: 80px;
+
+    }
+
+
+}
+
+
+/* .sign-in{
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0.5px rgba(255,255,255,0.5);
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+    grid-template-columns: 0.99fr;
+    grid-template-rows: 10vh 0.80fr;
+}
+
+.sign-in>h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: #323232;
+    text-shadow: 0px 0px 0px rgba(0,0,0,0.5);
+    justify-self: center;
+    padding-top: 15px;
+}
+
+.sign-in>form{
+    display: grid;
+    align-content: space-around;
+    justify-content: space-evenly;
+}
+
+.sign-in>form>input{
+    height: 9vh;
+    width: 35vw;
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding-left: 10px;
+    font-weight: normal;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+
+.sign-in>form>input::placeholder{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: rgba(0,0,0,0.5);
+}
+
+.sign-in>form>input:focus::placeholder{
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+}
+
+.sign-in>form>button{
+    height: 8.5vh;
+    width: 12vw;
+    justify-self: center;
+    border-radius: 0px 16px 0px 16px;
+    border: none;
+    font-weight: bold;
+    font-size: 1.7rem;
+    color: #323232;
+    letter-spacing: 1px;
+    background-color: transparent;
+    border: none;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #1AA15F;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.sign-in>form>button>i{
+    font-size: 2rem;
+}
+
+.sign-in>form>button:hover{
+    border-radius: 16px 0px 16px 0px;
+    box-shadow: 0px 0px 10px 0.5px rgba(0,0,0,0.5);
+    transform: scale(1.09);
+} */

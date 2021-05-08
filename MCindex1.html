@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="MCstyles1.css" rel="stylesheet">
+    <title>Just Quiz</title>
+    
+</head>
+<body>
+    <!-- <header class="sign-in">
+
+        <h1>Sign in yourself</h1>
+
+        <form id="form-1">
+
+            <input type="text" name="username" placeholder="Enter your name">
+
+            <input type="number" name="userid" placeholder="Enter your id">
+
+            <button type="button" name="reg-btn">Submit <i class="fas fa-caret-right"></i> </button>
+
+        </form>
+
+    </header> -->
+    <div class="quiz-wrapper">       
+        <div id="questionBox" class="question">
+            Sample Question
+        </div>
+        <div class="options">
+            <ul id="ul">
+                <li id="opt1" onclick="button(this)"></li>
+                <li id="opt2" onclick="button(this)"></li>
+                <li id="opt3" onclick="button(this)"></li>
+                <li id="opt4" onclick="button(this)"></li>
+            </ul>
+        </div>
+        <div class="score">
+            <div class="next">
+                <button id="btnNext" type="button" onclick="next()">
+                  Next
+                </button>
+                <button id="btnQuit" type="button" onclick="document.location='index.html'">
+                    Quit
+                  </button>
+            </div>
+            <div class="score-card">
+                SCORE: <span id="scoreCard">0</span>
+            </div>
+        </div>
+    </div>
+   <script src="MCindex1.js"></script>
+</body>
+</html>

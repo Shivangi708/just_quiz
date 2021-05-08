@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="HCstyles1.css" rel="stylesheet">
+    <title>Just Quiz</title>
+    
+</head>
+<body>
+    <!-- <div class="quiz-wrapper">       
+        <div id="questionBox" class="question">
+            Sample Question
+        </div>
+        <div class="options">
+            <ul id="ul">
+                <li id="opt1" onclick="button(this)"></li>
+                <li id="opt2" onclick="button(this)"></li>
+                <li id="opt3" onclick="button(this)"></li>
+                <li id="opt4" onclick="button(this)"></li>
+            </ul>
+        </div>
+        <div class="score">
+            <div class="next">
+                <button id="btnNext" type="button" onclick="next()">
+                  Next
+                </button>
+                <button id="btnQuit" type="button" onclick="document.location='index.html'">
+                    Quit
+                  </button>
+            </div>
+            <div class="score-card">
+                SCORE: <span id="scoreCard">0</span>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="quiz-container">
+        <div class="question-number">
+            <h3>Question <span class="question-num-value"></span> of 
+                <span class="total-questions"></span>
+                   </h3>
+        
+                   <div id="time">Time Remaing : <span id="timeremain">0</span>
+                   </div></div>
+  
+        <div class="question">
+            Sample que
+        </div>
+        <div class="options">
+            <div id="0" class="option1" onclick="check(this)"></div>
+            <div id="1" class="option2" onclick="check(this)"></div>
+            <div id="2" class="option3" onclick="check(this)"></div>
+            <div id="3" class="option4" onclick="check(this)"></div>
+        </div>
+        <div class="button btn">
+            <button type="button" onclick="next()" class="btn">Next</button>
+            <button class="btn" id="btnQuit" type="button" onclick="document.location='index.html'">
+                Quit
+              </button>
+        </div>
+        <div class="answers-tracker">
+    
+        </div>
+    </div>
+    <div class="quiz-over">
+        <div class="box">
+            <h1> * Quiz Completed OR Time Over *<br />
+                You got <span class="correct-answers"></span> out of 
+                <span class="total-questions2"></span> answers correct. 
+                That is <span class="percentage"></span>
+                Try Again!
+            </h1>
+            <button type="button" onclick="tryAgain()">Try Again!</button>
+            <button id="btnQuit" type="button" onclick="document.location='index.html'">
+                Quit
+              </button>
+        </div>
+    </div>
+   
+   <script src="HCindex1.js"></script>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Quiz</title>
+    <style>
+ body{
+    background-image: url("Lbg.jpg");
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ *{
+    box-sizing: border-box;
+} 
+
+.cat-wrapper{
+  
+    height: 400px;
+    width: 700px;
+    background-color:#ffeadb;
+    margin-top: 90px;
+    margin-left: 320px;
+    border-radius: 8px;
+    padding:5px; 
+}
+.cat-h1{
+      
+       text-align: center;
+       color: black;
+       font-weight: bold;
+       font-size:450%;
+       font-family: fantasy;
+       margin-bottom: 4%;
+}
+.cat-h4{  
+      text-align: center;
+      color:#cf4abe;
+      font-weight: bold;
+      font-size:250%;
+      font-family: fantasy;
+      margin-bottom: 1px;
+}
+ .button {
+        display: inline-block;
+        padding: 15px 25px;
+        font-size: 24px;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        outline: none;
+        color: #fff;
+        background-color: #4CAF50;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 9px #999;
+      }
+          .button:hover {background-color: #3e8e41}
+      
+      .button:active {
+        background-color: #3e8e41;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px);
+      }
+  @media (max-width: 960px) {
+     .cat-wrapper {   
+      height:200px ;
+      width: 500px;  
+      flex-direction: column;
+      text-align: center;
+      margin:220px auto;
+    }
+    .button{
+      font-size: 10px;
+     }
+     .cat-h1{
+       font-size: 250%;
+     }
+    .cat-h4{
+     font-size: 70%;
+    }
+} 
+ @media (max-width: 530px) {
+    .cat-wrapper {   
+        height:300px ;
+        width: 320px;  
+        text-align: center; 
+        margin:220px auto;
+    }
+    .button{
+       text-align: center;
+       size:10px ;
+      font-size: 10px;
+       /* height:10px ;
+      width:40px ;  */
+     }
+     .cat-h1{
+       font-size: 30px;
+     }
+    .cat-h4{   
+      margin-bottom: 5px;
+     font-size: 20px;
+    }
+} 
+      </style>
+</head>
+<body>
+    <div class="cat-wrapper"> 
+        <h1 class="cat-h1"><u> Choose Any Category</u></h1>
+      <div class="button"> 
+     <button type="button" class="button" onclick="document.location='Glevel.html'">Genral Knowledge</button>
+     <button type="button" class="button" onclick="document.location='Slevel.html'">Science</button>
+     <button type="button" class="button" onclick="document.location='Alevel.html'">Art</button>
+     <button type="button" class="button" onclick="document.location='Clevel.html'">Computer</button> 
+    </div> 
+    <h4 class="cat-h4">Play To Win But Enjoy The Fun !!</h4>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Just Quiz</title>
+ <style>
+ body{
+    background-image: url("glbg.jpg");
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+ *{
+    box-sizing: border-box;
+} 
+
+.level-wrapper{
+  
+    height: 400px;
+    width: 700px;
+    background-color:#ffeadb;
+    margin-top: 90px;
+    margin-left: 320px;
+   
+    border-radius: 8px;
+    padding:5px; 
+}
+.level-h1{
+      
+       text-align: center;
+       color: black;
+       font-weight: bold;
+       font-size:450%;
+       font-family: fantasy;
+       margin-bottom: 4%;
+}
+.level-h4{  
+      text-align: center;
+      color:#cf4abe;
+      font-weight: bold;
+      font-size:250%;
+      font-family: fantasy;
+      margin-bottom: 1px;
+}
+.btn-container{
+    text-align: center;
+    
+}
+
+.button {
+  padding: 15px 45px;
+  font-size: 16px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  background-color: #a5ecd7; 
+  border: none; 
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #32e0c4}
+
+.button:active {
+  background-color: #32e0c4;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+@media (max-width: 960px) {
+     .level-wrapper {   
+      height:260px ;
+      width: 600px;  
+      flex-direction: column;
+      text-align: center;
+      margin:220px auto;
+    }
+    .button{
+       
+      font-size: 10px;
+     }
+     .level-h1{
+       font-size: 250%;
+     }
+    .level-h4{
+        margin-bottom: 10px;
+     font-size: 30px;
+    }
+} 
+@media (max-width: 530px) {
+    .level-wrapper {   
+        height:250px ;
+        width: 320px;  
+        text-align: center; 
+        margin:220px auto;
+    }
+    .button{
+       text-align: center;
+       size:10px ;
+      font-size: 10px;
+       /* height:10px ;
+      width:40px ;  */
+     }
+     .level-h1{
+       font-size: 100%;
+     }
+    .level-h4{   
+      margin-bottom: 5px;
+     font-size: 100%;
+    }
+} 
+ </style>
+</head>
+<body>
+    <div class="level-wrapper"> 
+        <h1 class="level-h1"><u> Choose Any Level</u></h1>
+      <div class="button"> 
+     <button type="button" class="button" onclick="document.location='LGindex1.html'">LOW LEVEL</button>
+     <button type="button" class="button" onclick="document.location='MGindex1.html'">MEDIUM LEVEL</button>
+     <button type="button" class="button" onclick="document.location='HGindex1.html'">HIGH LEVEL</button>
+    </div> 
+    <h4 class="level-h4">GOOD LUCK & HAVE FUN !!</h4>
+</div>
+    
+</body>
+</html>
